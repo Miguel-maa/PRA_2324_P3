@@ -8,11 +8,11 @@
 template <typename T> 
 class BSTree {
     private:
-        //miembros privados
+        /**** Miembros privados *****/
 
 
         int nelem;  // Número de elementos almacenados en el ABB. 
-        BSNode<T> *root;  //  Nodo raíz del ABB.
+        BSNode<T>* root;  //  Nodo raíz del ABB.
 
 
         /*** Búsqueda de elementos ***/
@@ -126,14 +126,13 @@ class BSTree {
                 delete_cascade(n->izq); // Recorremos los nodos izquierdos
                 delete n;   // Eliminamos los nodos
             }
-
         }
 
 
 
 
     public:
-        // miembros públicos
+        /**** Miembros públicos *****/
 
 
         /*** Creación y tamaño ***/
